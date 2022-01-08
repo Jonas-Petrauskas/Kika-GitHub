@@ -186,10 +186,18 @@
             "image": "shopify:\/\/shop_images\/Group_177.png",
             "button_text": "SHOP FOOD"
           }
+        },
+        "9c1e3d73-b880-4e71-8abd-808833cedbbd": {
+          "type": "section",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_178.png",
+            "button_text": "SHOP COSMETICS"
+          }
         }
       },
       "block_order": [
-        "d73d0202-d9e5-484f-9312-1c7b2a0d7d18"
+        "d73d0202-d9e5-484f-9312-1c7b2a0d7d18",
+        "9c1e3d73-b880-4e71-8abd-808833cedbbd"
       ],
       "settings": {
         "background": "linear-gradient(310deg, rgba(17, 189, 251, 1) 15%, rgba(33, 249, 150, 1) 85%)"
