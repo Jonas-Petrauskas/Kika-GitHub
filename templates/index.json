@@ -177,43 +177,6 @@
         "swipe_on_mobile": false
       }
     },
-    "164167862962bf3e3a": {
-      "type": "shop-products",
-      "blocks": {
-        "d73d0202-d9e5-484f-9312-1c7b2a0d7d18": {
-          "type": "section",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Group_177.png",
-            "button_text": "SHOP FOOD",
-            "button_color": ""
-          }
-        },
-        "9c1e3d73-b880-4e71-8abd-808833cedbbd": {
-          "type": "section",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Group_178.png",
-            "button_text": "SHOP COSMETICS",
-            "button_color": ""
-          }
-        },
-        "f84275cb-b5a5-465a-9735-6ab89de7e3eb": {
-          "type": "section",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Group_179.png",
-            "button_text": "SHOP CARE",
-            "button_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "d73d0202-d9e5-484f-9312-1c7b2a0d7d18",
-        "9c1e3d73-b880-4e71-8abd-808833cedbbd",
-        "f84275cb-b5a5-465a-9735-6ab89de7e3eb"
-      ],
-      "settings": {
-        "background_color": ""
-      }
-    },
     "1641823854383ddfc5": {
       "type": "shop-products",
       "blocks": {
@@ -259,7 +222,6 @@
     "collage",
     "video",
     "multi_column",
-    "164167862962bf3e3a",
     "1641823854383ddfc5"
   ]
 }
