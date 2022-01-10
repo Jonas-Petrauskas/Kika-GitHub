@@ -213,6 +213,41 @@
       "settings": {
         "background_color": "#f3f3f3"
       }
+    },
+    "164183947528f257ba": {
+      "type": "image-with-text",
+      "blocks": {
+        "1641839475164274df-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Why White Dog Club?"
+          }
+        },
+        "1641839475164274df-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>White Dog Club is a community created for anyone who breeds, loves and cares for white coat dogs. This is a community where one can always find advice on how to best care for a white coat pet, where we share our many years of experience and choose the most optimal and healthiest solutions for the care of a white coat animal. Here you will always find not only like-minded pet owners and useful tips, but also recommendations for tested products that actually work.<\/p>"
+          }
+        },
+        "1641839475164274df-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1641839475164274df-0",
+        "1641839475164274df-1",
+        "1641839475164274df-2"
+      ],
+      "settings": {
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
     }
   },
   "order": [
@@ -222,6 +257,7 @@
     "collage",
     "video",
     "multi_column",
-    "1641823854383ddfc5"
+    "1641823854383ddfc5",
+    "164183947528f257ba"
   ]
 }
