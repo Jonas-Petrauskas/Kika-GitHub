@@ -224,10 +224,19 @@
             "button_text": "SHOP FOOD",
             "button_color": "#093541"
           }
+        },
+        "2de44d10-56e2-4b39-b3d3-ca99d866f5d7": {
+          "type": "section",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_178.png",
+            "button_text": "SHOP COSMETICS",
+            "button_color": "#c878a1"
+          }
         }
       },
       "block_order": [
-        "09ca11f8-7faa-453a-ae69-234947a9795f"
+        "09ca11f8-7faa-453a-ae69-234947a9795f",
+        "2de44d10-56e2-4b39-b3d3-ca99d866f5d7"
       ],
       "settings": {
         "background_color": ""
