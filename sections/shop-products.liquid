@@ -1,14 +1,8 @@
 <style>
 
   .shop-products__main {
+    padding: 1rem 0;
     background-color: {{ section.settings.background_color }};
-  }
-
-  .block-button__container {
-    text-align: center;
-    margin: auto;
-    width: 150px;
-    height: 30px;
   }
 
   .block-image__container > img {
@@ -16,15 +10,76 @@
     height: auto;
   }
 
-  @media screen and (min-width: 789px) {
+  .block-image__container {
+    padding: 2rem 0;
+    position: relative;
+    }
+
+    .block-button__container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 85%;
+      left: 20%;
+      right: 20%;
+      height: 35px;
+    }
+
+    .block-button__container > a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+
+  @media screen and (min-width: 540px) {
+
+    .block-button__container {
+      top: 88%;
+      left: 15%;
+      right: 15%;
+      height: 40px;
+    }
+  }
+
+
+  @media screen and (min-width: 768px) {
     .shop-products__wrapper {
       display: flex;
-      width: 70%;
+      width: 80%;
       margin: auto;
+      padding: 3rem 0;
     }
     
     .shop-products__block {
-      padding: 1rem;
+      padding: 1rem 2rem;
+    }
+
+    .block-button__container {
+      top: 85%;
+      left: 15%;
+      right: 15%;
+      height: 30px;
+    }
+
+    .block-image__container {
+      padding: 0;
+    }
+
+  }
+
+  @media screen and (min-width: 1024px) {
+    .block-button__container > a {
+      font-size: 1.6rem;
+    }
+
+    .shop-products__block {
+      padding: 1rem 3rem;
+    }
+
+    .block-button__container {
+      height: 35px;
     }
   }
 
