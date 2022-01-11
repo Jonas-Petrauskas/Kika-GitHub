@@ -23,10 +23,9 @@
 </div>
 
 {% schema %}
-  {
-    "name": "Feedback Section Blocks",
-    "settings": [
-    {
+{
+  "name": "Feedback Section Blocks",
+  "settings": [{
       "type": "color",
       "id": "background_color",
       "label": "Section Color"
@@ -35,28 +34,22 @@
       "type": "text",
       "id": "title_text",
       "label": "Title Text"
-    },
+    }
 
-    ],
-    "blocks": [
-    {
-      "name": "Section Block",
-      "type": "section",
-      "settings": [
-        {
-          "type": "color",
-          "id": "block_color",
-          "label": "Block Color"
-        }
-      ]
-    }
   ],
-  "presets": [
-    {
-      "name": "Feedback Section Blocks"
-    }
-  ]
-  }
+  "blocks": [{
+    "name": "Section Block",
+    "type": "section",
+    "settings": [{
+      "type": "color",
+      "id": "block_color",
+      "label": "Block Color"
+    }]
+  }],
+  "presets": [{
+    "name": "Feedback Section Blocks"
+  }]
+}
 {% endschema %}
 
 {% stylesheet %}
