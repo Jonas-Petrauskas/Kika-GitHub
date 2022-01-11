@@ -1,0 +1,3 @@
+.custom-grid__item {
+  flex-direction: column-reverse;
+}
