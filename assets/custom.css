@@ -1,3 +1,9 @@
-.custom-grid__item {
-  flex-direction: column-reverse;
+
+@media screen and (max-width: 768px) {
+
+  .custom-grid__item {
+    flex-direction: column-reverse;
+  }
+
 }
+
