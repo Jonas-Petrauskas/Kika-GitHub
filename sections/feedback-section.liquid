@@ -5,7 +5,7 @@
   }
 
   .content-container {
-    background-color: {{  }};
+    background-color: {{ bl }};
   }
 
 </style>
@@ -15,7 +15,9 @@
     <h3>{{ section.settings.title_text }}</h3>
   </div>
   {% for block in section.blocks %}
-  <div class="content-container">
+  <div 
+    style="background-color: {{ block.settings.block_color }};"
+    class="content-container">
     <div></div>
   </div>
   {% endfor %}
