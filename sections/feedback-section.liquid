@@ -9,13 +9,13 @@
   }
   
   .feedback-section__slick {
-/*     margin: 0 1rem; */
+    margin: 0 1rem;
   }
   
   
   .context-inside {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
   }
 
 </style>
@@ -27,11 +27,13 @@
   <div class="feedback-section__slick">
   {% for block in section.blocks %}
     <div 
-    class="content-container"
-    style="background-color: {{ block.settings.block_color }};">
-      <div class="context-inside"></div>
+      class="content-container"
+      style="background-color: {{ block.settings.block_color }};">
+      <div class="context-inside">
+      </div>
     </div>
   {% endfor %}
+   
   </div>
 
 </div>
