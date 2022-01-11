@@ -285,6 +285,13 @@
         "color_scheme": "background-1",
         "layout": "text_first"
       }
+    },
+    "164191145461d7ea8b": {
+      "type": "feedback-section",
+      "settings": {
+        "background_color": "#f3f3f3",
+        "title_text": "Thousands Of Happy Pups Around The World"
+      }
     }
   },
   "order": [
@@ -296,6 +303,7 @@
     "multi_column",
     "1641823854383ddfc5",
     "164183947528f257ba",
-    "16418402822dd01603"
+    "16418402822dd01603",
+    "164191145461d7ea8b"
   ]
 }
