@@ -288,6 +288,45 @@
     },
     "164191145461d7ea8b": {
       "type": "feedback-section",
+      "blocks": {
+        "dac372e9-2be2-492c-bbad-8e1e1f51acb1": {
+          "type": "section",
+          "settings": {
+            "block_color": ""
+          }
+        },
+        "1c67562c-2ddd-4e10-adf1-68ae76dae9ff": {
+          "type": "section",
+          "settings": {
+            "block_color": ""
+          }
+        },
+        "ccdce389-400f-4195-a55b-0dd2d32b055a": {
+          "type": "section",
+          "settings": {
+            "block_color": ""
+          }
+        },
+        "149f5975-f50b-4784-a603-6d042e04afb9": {
+          "type": "section",
+          "settings": {
+            "block_color": ""
+          }
+        },
+        "479645f9-ec77-4a18-adc5-102f5eb216fd": {
+          "type": "section",
+          "settings": {
+            "block_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "dac372e9-2be2-492c-bbad-8e1e1f51acb1",
+        "1c67562c-2ddd-4e10-adf1-68ae76dae9ff",
+        "ccdce389-400f-4195-a55b-0dd2d32b055a",
+        "149f5975-f50b-4784-a603-6d042e04afb9",
+        "479645f9-ec77-4a18-adc5-102f5eb216fd"
+      ],
       "settings": {
         "background_color": "#f3f3f3",
         "title_text": "Thousands Of Happy Pups Around The World"
