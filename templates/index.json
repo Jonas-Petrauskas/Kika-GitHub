@@ -1,5 +1,12 @@
 {
   "sections": {
+    "1641996657f01c150d": {
+      "type": "hero-section",
+      "settings": {
+        "desktop_image": "shopify:\/\/shop_images\/Group_372-min.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Group_373-min.jpg"
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -396,16 +403,10 @@
         "color_background": "#f9f9f9",
         "color_text": "#1c1d1d"
       }
-    },
-    "1641996657f01c150d": {
-      "type": "hero-section",
-      "settings": {
-        "desktop_image": "shopify:\/\/shop_images\/Group_372-min.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/Group_373-min.jpg"
-      }
     }
   },
   "order": [
+    "1641996657f01c150d",
     "image_banner",
     "rich_text",
     "featured_products",
@@ -416,7 +417,6 @@
     "164183947528f257ba",
     "16418402822dd01603",
     "164191145461d7ea8b",
-    "164198490823910097",
-    "1641996657f01c150d"
+    "164198490823910097"
   ]
 }
