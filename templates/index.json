@@ -292,14 +292,13 @@
         "dac372e9-2be2-492c-bbad-8e1e1f51acb1": {
           "type": "section",
           "settings": {
-            "block_color": "#975959",
-            "block_image": "shopify:\/\/shop_images\/C38A0953.png"
+            "block_color": "#f3f3f3"
           }
         },
         "1c67562c-2ddd-4e10-adf1-68ae76dae9ff": {
           "type": "section",
           "settings": {
-            "block_color": "#260606"
+            "block_color": "#fafafa"
           }
         },
         "ccdce389-400f-4195-a55b-0dd2d32b055a": {
