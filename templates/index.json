@@ -298,7 +298,7 @@
         "1c67562c-2ddd-4e10-adf1-68ae76dae9ff": {
           "type": "section",
           "settings": {
-            "block_color": "#fafafa"
+            "block_color": "#f3f3f3"
           }
         },
         "ccdce389-400f-4195-a55b-0dd2d32b055a": {
@@ -316,7 +316,7 @@
         "479645f9-ec77-4a18-adc5-102f5eb216fd": {
           "type": "section",
           "settings": {
-            "block_color": "#631818"
+            "block_color": "#f3f3f3"
           }
         }
       },
@@ -334,6 +334,7 @@
     },
     "164198490823910097": {
       "type": "testimonials",
+      "disabled": true,
       "blocks": {
         "16419849080ce99981-0": {
           "type": "testimonial",
