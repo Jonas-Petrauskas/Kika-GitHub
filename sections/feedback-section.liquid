@@ -32,15 +32,13 @@
     <h3>{{ section.settings.title_text }}</h3>
   </div>
   
-          <img src="{{ section.settings.section_image }}" alt="block_image">
-
-  
   <div class="feedback-section__slick">
     {% for block in section.blocks %}
     <div 
       class="content-container"
       style="background-color: {{ block.settings.block_color }};">
-        <img src="{{ block.settings.block_image }}" alt="block_image">
+        <img src="{{ block.settings.block_image | image_url: image_size }}" alt="block_image">
+
       </div>
     {% endfor %}
   </div>
@@ -59,13 +57,7 @@
 			"type": "text",
 			"id": "title_text",
 			"label": "Title Text"
-		},
-{
-
-				"type": "image_picker",
-				"id": "section_image",
-				"label": "Block Image"
-			}
+		}
 
 	],
 	"blocks": [{
