@@ -1845,7 +1845,7 @@ input[type='checkbox'] {
   padding-top: 1rem;
   padding-bottom: 1rem;
   
-  position: absolute;
+/*   position: absolute; */
 }
 
 @media screen and (min-width: 990px) {
