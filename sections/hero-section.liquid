@@ -19,12 +19,6 @@
     .hero-container__mobile {
       display: none;
     }
-  }
-  
-  @media screen and (max-width: 540px) {
-    .hero-container__desktop {
-      display: none;
-    }
     
     .desktop__button {
       background-color: {{ section.settings.button_color }};
@@ -41,7 +35,13 @@
       height: 40px;
 
       font-weight: bold;
-      font-size: 2rem;   
+      font-size: 2rem;     
+    }
+  }
+  
+  @media screen and (max-width: 540px) {
+    .hero-container__desktop {
+      display: none;
     }
   }
   
