@@ -292,7 +292,8 @@
         "dac372e9-2be2-492c-bbad-8e1e1f51acb1": {
           "type": "section",
           "settings": {
-            "block_color": "#975959"
+            "block_color": "#975959",
+            "block_image": "shopify:\/\/shop_images\/BF1_2.jpg"
           }
         },
         "1c67562c-2ddd-4e10-adf1-68ae76dae9ff": {
