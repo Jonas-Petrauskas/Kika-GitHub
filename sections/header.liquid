@@ -333,8 +333,10 @@
               src="{{ section.settings.logo | image_url}}"
               loading="lazy"
               class="header__heading-logo"
+              height="{{ section.settings.logo.height }}"
               alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
             >
+          <img src="{{ section.settings.logo_test | image_url }}" >
           {%- else -%}
             <span class="h2">{{ shop.name }}</span>
           {%- endif -%}
