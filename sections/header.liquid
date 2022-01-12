@@ -329,7 +329,7 @@
     {%- endif -%}
         <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
           {%- if section.settings.logo != blank -%}
-            <img  
+            <img srcset="{{ section.settings.logo | image_url: image_size }} 1x, {{ section.settings.logo | image_url: image_size, scale: 2 }} 2x"
               src="{{ section.settings.logo | image_url: image_size }}"
               loading="lazy"
               class="header__heading-logo"
