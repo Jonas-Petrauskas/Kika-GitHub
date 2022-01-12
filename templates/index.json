@@ -4,7 +4,9 @@
       "type": "hero-section",
       "settings": {
         "desktop_image": "shopify:\/\/shop_images\/Group_372-min.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/Group_373-min.jpg"
+        "mobile_image": "shopify:\/\/shop_images\/Group_373-min.jpg",
+        "button_text": "SHOP NOW",
+        "button_color": "#db1d1d"
       }
     },
     "1641823854383ddfc5": {
