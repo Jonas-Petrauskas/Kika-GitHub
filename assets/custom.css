@@ -111,3 +111,23 @@
 
 }
 
+
+.quote-icon{
+  display:block;
+  margin:0 auto 20px;
+}
+
+.testimonial-stars{
+  display:block;
+  font-size:16px;
+  letter-spacing:0.2em;
+  margin-bottom:10px
+}
+
+@media only screen and (min-width:769px){
+
+.testimonial-stars{
+    font-size:18px;
+    margin-bottom:15px
+}
+  }
