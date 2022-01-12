@@ -1,8 +1,50 @@
+
+<style>
+
+  
+
+</style>
+
+<div class="hero-section">
+
+  <div class="hero-container__desktop">
+    <div class="hero-desktop__wrapper">
+      <img src="{{ section.settings.desktop_image }}" alt="">
+      <a href=""></a>
+    </div>
+  </div>
+
+  <div class="hero-container__mobile">
+    <div class="hero-mobile__wrapper">
+      <img src="{{ section.settings.mobile_image }}" alt="">
+      <a href=""></a>
+    </div>
+  </div>
+
+</div>
+
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Hero Section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "desktop_image",
+      "label": "Desktop image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero Section"
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}
