@@ -1,7 +1,7 @@
 
 <style>
   
-  .hero-container__desktop > img, .hero-container__mobile > img {
+  .hero-desktop__wrapper > img, .hero-mobile__wrapper > img {
     width: 100%;
   }
   
@@ -24,17 +24,17 @@
 <div class="hero-section">
 
   <div class="hero-container__desktop">
-<!--     <div class="hero-desktop__wrapper"> -->
+    <div class="hero-desktop__wrapper">
       <img src="{{ section.settings.desktop_image | image_url }}" alt="desktop-image">
       <a href=""></a>
-<!--     </div> -->
+    </div>
   </div>
 
   <div class="hero-container__mobile">
-<!--     <div class="hero-mobile__wrapper"> -->
+    <div class="hero-mobile__wrapper">
       <img src="{{ section.settings.mobile_image | image_url }}" alt="mobile-image">
       <a href=""></a>
-<!--     </div> -->
+    </div>
   </div>
 
 </div>
