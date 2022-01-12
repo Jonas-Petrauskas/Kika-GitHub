@@ -295,6 +295,7 @@
     },
     "164191145461d7ea8b": {
       "type": "feedback-section",
+      "disabled": true,
       "blocks": {
         "dac372e9-2be2-492c-bbad-8e1e1f51acb1": {
           "type": "section",
