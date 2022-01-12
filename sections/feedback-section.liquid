@@ -27,52 +27,52 @@
 </style>
 
 <div class="feedback-section__wrapper">
-  
   <div class="feedback-section_title">
     <h3>{{ section.settings.title_text }}</h3>
   </div>
-  
   <div class="feedback-section__slick">
-    {% for block in section.blocks %}
+  {% for block in section.blocks %}
     <div 
       class="content-container"
       style="background-color: {{ block.settings.block_color }};">
       <div class="context-inside">
-<!--         <img src="https://cdn.shopify.com/s/files/1/0597/1551/8645/files/Group_371.png?v=1641988502" alt="block_image"> -->
+                <img src="https://cdn.shopify.com/s/files/1/0597/1551/8645/files/Group_371.png?v=1641988502" alt="block_image">
+
       </div>
-    {% endfor %}
-  </div>
+    </div>
+  {% endfor %}
    
+  </div>
+
 </div>
 
 {% schema %}
 {
-	"name": "Feedback Section Blocks",
-	"settings": [{
-			"type": "color",
-			"id": "background_color",
-			"label": "Section Color"
-		},
-		{
-			"type": "text",
-			"id": "title_text",
-			"label": "Title Text"
-		}
+  "name": "Feedback Section Blocks",
+  "settings": [{
+      "type": "color",
+      "id": "background_color",
+      "label": "Section Color"
+    },
+    {
+      "type": "text",
+      "id": "title_text",
+      "label": "Title Text"
+    }
 
-	],
-	"blocks": [{
-		"name": "Section Block",
-		"type": "section",
-		"settings": [{
-				"type": "color",
-				"id": "block_color",
-				"label": "Block Color"
-			}
-		]
-	}],
-	"presets": [{
-		"name": "Feedback Section Blocks"
-	}]
+  ],
+  "blocks": [{
+    "name": "Section Block",
+    "type": "section",
+    "settings": [{
+      "type": "color",
+      "id": "block_color",
+      "label": "Block Color"
+    }]
+  }],
+  "presets": [{
+    "name": "Feedback Section Blocks"
+  }]
 }
 {% endschema %}
 
