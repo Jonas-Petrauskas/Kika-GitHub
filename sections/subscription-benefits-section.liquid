@@ -1,8 +1,94 @@
+<div class="subscription-section__wrapper">
+
+  <div class="subscription-title">
+    <h3>{{ section.settings.title_text }}</h3>
+  </div>
+  
+  <div class="subscription-section">
+    <div class="subscription-image__container">
+      <img 
+      loading="lazy"
+      src="{{ section.settings.product_image | image_url }}" alt="" class="subscription-image">
+    </div>
+    <div class="content-container">
+      <div class="content-line"></div>
+      <div class="content-text__container">
+        <img 
+        loading="lazy"
+        src="{{ section.settings.icon_image | image_url }}" alt="" class="content-image">
+        <div class="text-wrapper">
+          <h3>{{ section.settings.content_title1 }}</h3>
+          <p>{{ section.settings.richtext1 }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+	"name": "Subscription Benefits Section",
+	"settings": [{
+			"type": "text",
+			"id": "title_text",
+			"label": "Title Text"
+		},
+		{
+			"type": "image_picker",
+			"id": "product_image",
+			"label": "Product image"
+		},
+		{
+			"type": "image_picker",
+			"id": "icon_image",
+			"label": "Icon image"
+		},
+    {
+      "type": "text",
+      "id": "content_title1",
+      "label": "Content Title_1"
+    },
+    {
+      "type": "richtext",
+      "id": "richtext1",
+      "label": "Rich Text_1"
+    },
+    {
+      "type": "text",
+      "id": "content_title2",
+      "label": "Content Title_2"
+    },
+    {
+      "type": "richtext",
+      "id": "richtext2",
+      "label": "Rich Text_2"
+    },
+    {
+      "type": "text",
+      "id": "content_title3",
+      "label": "Content Title_3"
+    },
+    {
+      "type": "richtext",
+      "id": "richtext3",
+      "label": "Rich Text_3"
+    },
+    {
+      "type": "text",
+      "id": "content_title4",
+      "label": "Content Title_4"
+    },
+    {
+      "type": "richtext",
+      "id": "richtext4",
+      "label": "Rich Text_4"
+    }
+	],
+	"presets": [{
+		"name": "Subscription Benefits Section"
+	}]
+}
 {% endschema %}
 
 {% stylesheet %}
