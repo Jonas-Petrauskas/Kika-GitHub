@@ -164,6 +164,22 @@
         "background_color": "#ffffff",
         "title_text": "Thousands Of Happy Pups Around The World"
       }
+    },
+    "1642078880e829a408": {
+      "type": "subscription-benefits-section",
+      "settings": {
+        "title_text": "Subscription Benefits",
+        "product_image": "shopify:\/\/shop_images\/Group_346_8f560f07-ddbc-45d8-b28d-b23b01568d2b.png",
+        "icon_image": "shopify:\/\/shop_images\/yes_ec6775cb-c54a-4988-9f80-f4377a63fddc.png",
+        "content_title1": "Save 10% every single month",
+        "richtext1": "<p>& avoid the hassle of reordering<\/p>",
+        "content_title2": "Enjoy FREE delivery",
+        "richtext2": "<p>on every single order<\/p>",
+        "content_title3": "",
+        "richtext3": "",
+        "content_title4": "",
+        "richtext4": ""
+      }
     }
   },
   "order": [
@@ -171,6 +187,7 @@
     "1641823854383ddfc5",
     "164183947528f257ba",
     "16418402822dd01603",
-    "164191145461d7ea8b"
+    "164191145461d7ea8b",
+    "1642078880e829a408"
   ]
 }
