@@ -1,30 +1,142 @@
 <style>
 
+  .instagram-block-image__container {
+    display: flex;
+    padding-bottom: 4rem;
+  }
+
+  .title-and-icons {
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+  }
+
+  .facebook_icon, .instagram_icon {
+    padding-right: 1rem;
+    /* width: 32px; */
+    height: 32px;
+  }
+
+  .title-and-icons h3 {
+    margin: 0;
+    font-size: 3rem;
+    color: #035966;
+  }
+
+  .instagram-paragraph__container p {
+    /* margin: -20px 0 20px 0; */
+    color: #035966;
+  }
+
+  .container-block {
+    padding-right: 2rem;
+  }
+
+  .container-block img {
+    width: 100%;
+  }
+
+  .container-block:nth-child(4) {
+    padding: 0;
+  }
+
   .instagram-section__wrapper {
     background-color: {{ section.settings.background_color }};
+  }
+
+  @media screen and (max-width: 748px) {
+    .instagram-text__container, .instagram-block-image__container {
+      display: none;
+    }
+
+    .title-and-icons__mobile {
+      padding-top: 2rem;
+    }
+
+    .title-and-icons__mobile h3 {
+      margin: 0;
+      font-size: 3rem;
+      color: #035966;
+    }
+
+    .instagram-image-container__mobile {
+      display: flex;
+      padding-bottom: 4rem;
+    }
+
+    .container-block__mobile {
+      padding-right: 2rem;
+    }
+
+    .container-block__mobile img {
+      width: 100%;
+    }
+
+    .container-block__mobile:nth-child(4) {
+      padding: 0;
+    }
   }
 
 </style>
 
 <div class="instagram-section__wrapper">
 
-  <div class="instagram-title__container">
-    <img src="" alt="">
-    <img src="" alt="">
-    <h3>{{ section.settings.title_text }}</h3>
+  <div class="instagram-text__container page-width">
+
+    <div class="title-and-icons">
+      <img class="facebook_icon" src="{{ section.settings.icon_1 | image_url: image_size }}" alt="facebook_icon">
+      <img class="instagram_icon" src="{{ section.settings.icon_2 | image_url: image_size }}" alt="instagram_icon">
+      <h3>{{ section.settings.title_text }}</h3>
+    </div>
+
+    <div class="instagram-paragraph__container">
+      <p>{{ section.settings.rich_text }}</p>
+    </div>
+
   </div>
 
-  <div class="instagram-paragraph__container">
-    <p>{{ section.settings.rich_text }}</p>
-  </div>
-
-  <div class="instagram-block-image__container">
+  <div class="instagram-block-image__container page-width">
     {% for block in section.blocks %}
-    <img src="{{ block.settings.image | image_url: image_size }}" alt="{{ block.settings.image.alt }}">
+    <div class="container-block">
+      <img src="{{ block.settings.image | image_url: image_size }}" alt="{{ block.settings.image.alt }}">
+    </div>
+    {% endfor %}
+  </div>
+
+  <!-- Responsive for Mobile -->
+
+  <div class="text-container__mobile page-width">
+
+    <div class="title-and-icons__mobile">
+      <div class="icon-container__mobile">
+        <img class="facebook_icon" src="{{ section.settings.icon_1 | image_url: image_size }}" alt="facebook_icon">
+        <img class="instagram_icon" src="{{ section.settings.icon_2 | image_url: image_size }}" alt="instagram_icon">
+      </div>
+      <h3>{{ section.settings.title_text }}</h3>
+    </div>
+
+    <div class="instagram-paragraph__container">
+      <p>{{ section.settings.rich_text }}</p>
+    </div>
+
+  </div>
+
+  <div class="instagram-image-container__mobile page-width">
+    {% for block in section.blocks %}
+    <div class="container-block__mobile">
+      <img src="{{ block.settings.image | image_url: image_size }}" alt="{{ block.settings.image.alt }}">
+    </div>
     {% endfor %}
   </div>
 
 </div>
+
+<script>
+
+  $(".instagram-image-container__mobile").slick()
+
+
+</script>
 
 {% schema %}
 {
@@ -34,6 +146,16 @@
       "type": "color",
       "id": "background_color",
       "label": "Section Color"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_1",
+      "label": "Icon 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_2",
+      "label": "Icon 2"
     },
     {
       "type": "text",
