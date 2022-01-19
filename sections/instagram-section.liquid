@@ -1,8 +1,65 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+<style>
+
+  .instagram-section__wrapper {
+    background-color: {{ section.settings.background_color }};
   }
+
+</style>
+
+<div class="instagram-section__wrapper">
+
+  <div class="instagram-title__container">
+    <img src="" alt="">
+    <img src="" alt="">
+    <h3>{{ section.settings.title_text }}</h3>
+  </div>
+
+  <div class="instagram-paragraph__container">
+    <p>{{ section.settings.rich_text }}</p>
+  </div>
+
+  <div class="instagram-block-image__container">
+    {% for block in section.blocks %}
+    <img src="{{ block.settings.image | image_url: image_size }}" alt="{{ block.settings.image.alt }}">
+    {% endfor %}
+  </div>
+
+</div>
+
+{% schema %}
+{
+  "name": "Instagram Section",
+  "max_blocks": 4,
+  "settings": [{
+      "type": "color",
+      "id": "background_color",
+      "label": "Section Color"
+    },
+    {
+      "type": "text",
+      "id": "title_text",
+      "label": "Section Title"
+    },
+    {
+      "type": "richtext",
+      "id": "rich_text",
+      "label": "Section Paragraph"
+    }
+  ],
+  "blocks": [{
+    "name": "Section Block",
+    "type": "section",
+    "settings": [{
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    }]
+  }],
+  "presets": [{
+    "name": "Instagram Section"
+  }]
+
+}
 {% endschema %}
 
 {% stylesheet %}
