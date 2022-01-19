@@ -4,34 +4,120 @@
   display: flex;
 }
 
+.subscription-title > h3 {
+  font-size: 4rem;
+  color: #035966;
+}
+
+.subscription-image__container {
+  width: 100%;
+}
+
 .subscription-image {
   width: 100%;
 }
 
 .content-image {
-  width: 16px;
-  height: 16px;
-  margin: auto;
+  width: 36px;
+  height: 36px;
+  margin: auto 10px;
 }
 
 .text-wrapper > h3, .text-wrapper > p {
   margin: 0;
   padding: 0;
+  color: #035966;
+}
+
+.text-wrapper > h3 {
+  font-size: 30px;
+}
+
+.text-wrapper > p {
+  font-size: 20px;
 }
 
 .content-text__container {
   display: flex;
 }
 
+.subscription-title {
+  text-align: center;
+}
+
+.content-container__wrapper {
+  margin: auto;
+  width: 80%;
+}
+
+.content-container {
+  margin: auto;
+  padding: 1rem 0;
+  max-width: 50rem;
+  border-top: 1px solid #035966;
+}
+
+.bottom-border {
+  border-bottom: 1px solid #035966;
+}
+
+
+.subscription-section__buton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 24px auto 0;
+  text-decoration: none;
+  color: white;
+  max-width: 50rem;
+  height: 5rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  background-color: {{ section.settings.button_color }};
+}
+
+@media screen and (max-width: 748px) {
+  .subscription-section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .subscription-title > h3 {
+  font-size: 3rem;
+}
+
+}
+
+@media screen and (max-width: 1000px) {
+    .text-wrapper > h3 {
+    font-size: 20px;
+  }
+
+  .text-wrapper > p {
+    font-size: 16px;
+    
+  }
+
+    .content-image {
+    width: 30px;
+    height: 30px;
+  }
+
+  .subscription-section__buton {
+    font-size: 2rem;
+  }
+}
+
 </style>
 
-<div class="subscription-section__wrapper">
+<div class="subscription-section__wrapper page-width">
 
   <div class="subscription-title">
     <h3>{{ section.settings.title_text }}</h3>
   </div>
   
   <div class="subscription-section">
+
     <div class="subscription-image__container">
       <img 
       loading="lazy"
@@ -39,9 +125,8 @@
     </div>
 
     <div class="content-container__wrapper">
-      
+
       <div class="content-container">
-        <div class="content-line"></div>
         <div class="content-text__container">
           <img 
           loading="lazy"
@@ -52,9 +137,9 @@
           </div>
         </div>
       </div>
+
   
       <div class="content-container">
-        <div class="content-line"></div>
         <div class="content-text__container">
           <img 
           loading="lazy"
@@ -65,9 +150,9 @@
           </div>
         </div>
       </div>
+
   
       <div class="content-container">
-        <div class="content-line"></div>
         <div class="content-text__container">
           <img 
           loading="lazy"
@@ -78,9 +163,9 @@
           </div>
         </div>
       </div>
+
   
-      <div class="content-container">
-        <div class="content-line"></div>
+      <div class="content-container bottom-border">
         <div class="content-text__container">
           <img 
           loading="lazy"
@@ -91,6 +176,8 @@
           </div>
         </div>
       </div>
+
+        <a href="/" class="subscription-section__buton">{{ section.settings.button_text }}</a>
 
     </div>
 
@@ -117,6 +204,16 @@
 			"id": "icon_image",
 			"label": "Icon image"
 		},
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Buttton Text"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Button Color"
+    },
     {
       "type": "text",
       "id": "content_title1",

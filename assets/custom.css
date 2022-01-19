@@ -1,3 +1,173 @@
+/* Shop Products Section */
+
+
+.shop-products__main {
+  padding: 1rem 0;
+  /* background-color: {{ section.settings.background_color }}; */
+}
+
+.block-image__container > img {
+  width: 100%;
+  height: auto;
+}
+
+.block-image__container {
+  padding: 2rem 0;
+  position: relative;
+  }
+
+  .block-button__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    top: 85%;
+    left: 20%;
+    right: 20%;
+    height: 35px;
+  }
+
+  .block-button__container {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+@media screen and (min-width: 540px) {
+
+  .block-button__container {
+    top: 88%;
+    left: 25%;
+    right: 25%;
+    height: 40px;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .shop-products__wrapper {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 3rem 0;
+  }
+  
+  .shop-products__block {
+    padding: 1rem 2rem;
+  }
+
+  .block-button__container {
+    top: 85%;
+    left: 15%;
+    right: 15%;
+    height: 30px;
+  }
+
+  .block-image__container {
+    padding: 0;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .block-button__container > a {
+    font-size: 1.6rem;
+  }
+
+  .shop-products__block {
+    padding: 1rem 3rem;
+  }
+
+  .block-button__container {
+    height: 35px;
+  }
+}
+
+/* Hero Section */
+
+.hero-section {
+  clip-path: ellipse(150% 100% at 50% 100%);
+  margin-bottom: -1rem;
+}
+
+.hero-desktop__wrapper > img, .hero-mobile__wrapper > img {
+  width: 100%;
+}
+
+.hero-desktop__wrapper {
+  position: relative;
+}
+
+.mobile__button {
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  text-decoration: none;
+  
+  
+  top: 63%;
+  left: 5%;
+  right: 38%;
+  height: 40px;
+  font-weight: bold;
+  font-size: 2rem;
+  
+  /* background-color: {{ section.settings.button_color }}; */
+}
+
+
+
+@media screen and (min-width: 541px) {
+  .hero-container__mobile {
+    display: none;
+  }
+  
+  .desktop__button {
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    text-decoration: none;
+    
+    top: 80%;
+    left: 54%;
+    right: 20%;
+    height: 40px;
+    
+    font-weight: bold;
+    font-size: 2rem;    
+
+    /* background-color: {{ section.settings.button_color }}; */
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .hero-container__desktop {
+    display: none;
+  }
+}
+
+  @media screen and (max-width: 768px) {
+    .desktop__button {
+      height: 32px;
+      font-size: 1.6rem;
+    }
+  }
+
+  /* Subscription Benefits Section */
+
+
+
+  /* Image With Text Section */
 
 @media screen and (max-width: 750px) {
 

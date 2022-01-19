@@ -1,5 +1,5 @@
 <style>
-
+  /* 
   .shop-products__main {
     padding: 1rem 0;
     background-color: {{ section.settings.background_color }};
@@ -82,23 +82,18 @@
     .block-button__container {
       height: 35px;
     }
-  }
-
+  } */
 </style>
 
-<div class="shop-products__main">
+<div class="shop-products__main" style="background-color: {{ section.settings.background_color }};">
   <div class="shop-products__wrapper">
     {% for block in section.blocks %}
     <div class="shop-products__block">
       <div class="block-image__container">
-        <img 
-        loading="lazy"
-        src="{{ block.settings.image | image_url: image_size }}" 
-        alt="{{ block.settings.image.alt }}">
-          <a 
-          class="block-button__container"
-          style="background-color: {{ block.settings.button_color }};"
-          href="/">{{ block.settings.button_text }}</a>
+        <img loading="lazy" src="{{ block.settings.image | image_url: image_size }}"
+          alt="{{ block.settings.image.alt }}">
+        <a class="block-button__container" style="background-color: {{ block.settings.button_color }};" href="/">{{
+          block.settings.button_text }}</a>
       </div>
     </div>
     {% endfor %}
@@ -107,43 +102,43 @@
 
 {% schema %}
 {
-  "name": "Shop Products Blocks",
-  "max_blocks": 3,
-  "settings": [
-    {
-      "type": "color",
-      "id": "background_color",
-      "label": "Section Color"
-    }
-  ],
-  "blocks": [
-    {
-      "name": "Section Block",
-      "type": "section",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        },
-        {
-          "type": "text",
-          "id": "button_text",
-          "label": "Button Text"
-        },
-        {
-          "type": "color",
-          "id": "button_color",
-          "label": "Button Color"
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "Shop Section Blocks"
-    }
-  ]
+"name": "Shop Products Blocks",
+"max_blocks": 3,
+"settings": [
+{
+"type": "color",
+"id": "background_color",
+"label": "Section Color"
+}
+],
+"blocks": [
+{
+"name": "Section Block",
+"type": "section",
+"settings": [
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+},
+{
+"type": "text",
+"id": "button_text",
+"label": "Button Text"
+},
+{
+"type": "color",
+"id": "button_color",
+"label": "Button Color"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Shop Section Blocks"
+}
+]
 }
 {% endschema %}
 
@@ -153,4 +148,3 @@
 
 {% javascript %}
 {% endjavascript %}
-

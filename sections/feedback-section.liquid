@@ -1,10 +1,15 @@
 <style>
-
   .feedback-section__wrapper {
-    background-color: {{ section.settings.background_color }};
+    background-color: {
+        {
+        section.settings.background_color
+      }
+    }
+
+    ;
   }
 
-/*   .content-container {
+  /*   .content-container {
     margin: 0 4.5rem;
   }
   
@@ -23,17 +28,17 @@
     max-width: 100%;
     height: auto;
   } */
-  
-/*   .child-section > img {
+
+  /*   .child-section > img {
     max-width: 100%;
     height: 300px;
   } */
-  
-  
-  
-/*  fix this part  */
-  
-/*   .feedback-section__slick{
+
+
+
+  /*  fix this part  */
+
+  /*   .feedback-section__slick{
   margin:20px auto;
   text-align: center;
   padding:20px;
@@ -61,8 +66,6 @@
     height: 300px;
     max-width: initial;
   } */
-
-
 </style>
 
 <div class="feedback-section__wrapper">
@@ -70,50 +73,48 @@
     <h3>{{ section.settings.title_text }}</h3>
   </div>
   <div class="feedback-section__slick">
-  {% for block in section.blocks %}
-    <div 
-      class="content-container"
-      style="background-color: {{ block.settings.block_color }};">
+    {% for block in section.blocks %}
+    <div class="content-container" style="background-color: {{ block.settings.block_color }};">
       <div class="context-inside">
         <div class="child-section">
-<!--                           <img src="https://cdn.shopify.com/s/files/1/0597/1551/8645/files/Group_371.png?v=1641988502" alt="block_image"> -->
+          <!--                           <img src="https://cdn.shopify.com/s/files/1/0597/1551/8645/files/Group_371.png?v=1641988502" alt="block_image"> -->
 
         </div>
       </div>
     </div>
-  {% endfor %}
-   
+    {% endfor %}
+
   </div>
 
 </div>
 
 {% schema %}
 {
-  "name": "Feedback Section Blocks",
-  "settings": [{
-      "type": "color",
-      "id": "background_color",
-      "label": "Section Color"
-    },
-    {
-      "type": "text",
-      "id": "title_text",
-      "label": "Title Text"
-    }
+"name": "Feedback Section Blocks",
+"settings": [{
+"type": "color",
+"id": "background_color",
+"label": "Section Color"
+},
+{
+"type": "text",
+"id": "title_text",
+"label": "Title Text"
+}
 
-  ],
-  "blocks": [{
-    "name": "Section Block",
-    "type": "section",
-    "settings": [{
-      "type": "color",
-      "id": "block_color",
-      "label": "Block Color"
-    }]
-  }],
-  "presets": [{
-    "name": "Feedback Section Blocks"
-  }]
+],
+"blocks": [{
+"name": "Section Block",
+"type": "section",
+"settings": [{
+"type": "color",
+"id": "block_color",
+"label": "Block Color"
+}]
+}],
+"presets": [{
+"name": "Feedback Section Blocks"
+}]
 }
 {% endschema %}
 
