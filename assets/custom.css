@@ -3,7 +3,6 @@
 
 .shop-products__main {
   padding: 1rem 0;
-  /* background-color: {{ section.settings.background_color }}; */
 }
 
 .block-image__container > img {
@@ -88,7 +87,7 @@
 /* Hero Section */
 
 .hero-section {
-  clip-path: ellipse(150% 100% at 50% 100%);
+  clip-path: ellipse(250% 100% at 50% 100%);
   margin-bottom: -1rem;
 }
 
@@ -111,19 +110,22 @@
   text-decoration: none;
   
   
-  top: 63%;
+  top: 70%;
   left: 5%;
   right: 38%;
   height: 40px;
   font-weight: bold;
   font-size: 2rem;
-  
-  /* background-color: {{ section.settings.button_color }}; */
 }
 
 
 
 @media screen and (min-width: 541px) {
+
+  .hero-section {
+    clip-path: ellipse(150% 100% at 50% 100%);
+  }
+
   .hero-container__mobile {
     display: none;
   }
@@ -145,8 +147,6 @@
     
     font-weight: bold;
     font-size: 2rem;    
-
-    /* background-color: {{ section.settings.button_color }}; */
   }
 }
 
@@ -175,5 +175,97 @@
     flex-direction: column-reverse;
   }
 
+}
+
+/* Instagarm Section */
+
+.instagram-section__wrapper {
+  clip-path: ellipse(150% 100% at 50% 0%);
+}
+
+.instagram-block-image__container {
+  display: flex;
+  padding-bottom: 4rem;
+}
+
+.title-and-icons {
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.facebook_icon, .instagram_icon {
+  padding-right: 1rem;
+  height: 32px;
+}
+
+.title-and-icons h3 {
+  margin: 0;
+  font-size: 3rem;
+  color: #035966;
+}
+
+.instagram-paragraph__container p {
+  color: #035966;
+}
+
+.container-block {
+  padding-right: 2rem;
+}
+
+.container-block img {
+  width: 100%;
+}
+
+.container-block:nth-child(4) {
+  padding: 0;
+}
+
+@media screen and (min-width: 749px) {
+  .text-container__mobile, .instagram-image-container__mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 748px) {
+
+  .instagram-section__wrapper {
+    clip-path: ellipse(250% 100% at 50% 0%);
+  }
+
+  .instagram-text__container, .instagram-block-image__container {
+    display: none;
+  }
+
+  .title-and-icons__mobile {
+    padding-top: 2rem;
+  }
+
+  .title-and-icons__mobile h3 {
+    margin: 0;
+    font-size: 3rem;
+    color: #035966;
+  }
+
+  .instagram-image-container__mobile {
+    display: flex;
+    padding-bottom: 4rem;
+  }
+
+  .container-block__mobile {
+    padding-right: 2rem;
+  }
+
+  .container-block__mobile img {
+    width: 100%;
+  }
+
+  .container-block__mobile:nth-child(4) {
+    padding: 0;
+  }
+
+  .instagram-image-container__mobile .slick-list {
+    padding-left: 0 !important;
+  }
 }
 

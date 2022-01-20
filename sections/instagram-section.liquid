@@ -87,13 +87,13 @@
 
 </style>
 
-<div class="instagram-section__wrapper">
+<div class="instagram-section__wrapper" style="{{ section.settings.background_color }}">
 
   <div class="instagram-text__container page-width">
 
     <div class="title-and-icons">
-      <img class="facebook_icon" src="{{ section.settings.icon_1 | image_url: image_size }}" alt="facebook_icon">
-      <img class="instagram_icon" src="{{ section.settings.icon_2 | image_url: image_size }}" alt="instagram_icon">
+      <img class="facebook_icon" loading="lazy" src="{{ section.settings.icon_1 | image_url: image_size }}" alt="facebook_icon">
+      <img class="instagram_icon" loading="lazy" src="{{ section.settings.icon_2 | image_url: image_size }}" alt="instagram_icon">
       <h3>{{ section.settings.title_text }}</h3>
     </div>
 
@@ -106,7 +106,7 @@
   <div class="instagram-block-image__container page-width">
     {% for block in section.blocks %}
     <div class="container-block">
-      <img src="{{ block.settings.image | image_url: image_size }}" alt="{{ block.settings.image.alt }}">
+      <img loading="lazy" src="{{ block.settings.image | image_url: image_size }}" alt="{{ block.settings.image.alt }}">
     </div>
     {% endfor %}
   </div>
