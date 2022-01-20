@@ -13,7 +13,6 @@
 
   .facebook_icon, .instagram_icon {
     padding-right: 1rem;
-    /* width: 32px; */
     height: 32px;
   }
 
@@ -24,7 +23,6 @@
   }
 
   .instagram-paragraph__container p {
-    /* margin: -20px 0 20px 0; */
     color: #035966;
   }
 
@@ -42,6 +40,12 @@
 
   .instagram-section__wrapper {
     background-color: {{ section.settings.background_color }};
+  }
+
+  @media screen and (min-width: 749px) {
+    .text-container__mobile, .instagram-image-container__mobile {
+      display: none;
+    }
   }
 
   @media screen and (max-width: 748px) {
@@ -74,6 +78,10 @@
 
     .container-block__mobile:nth-child(4) {
       padding: 0;
+    }
+
+    .instagram-image-container__mobile .slick-list {
+      padding-left: 0 !important;
     }
   }
 
@@ -130,13 +138,6 @@
   </div>
 
 </div>
-
-<script>
-
-  $(".instagram-image-container__mobile").slick()
-
-
-</script>
 
 {% schema %}
 {
