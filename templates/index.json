@@ -219,6 +219,8 @@
       ],
       "settings": {
         "background_color": "#f3f3f3",
+        "icon_1": "shopify:\/\/shop_images\/Icon_ionic-logo-facebook.png",
+        "icon_2": "shopify:\/\/shop_images\/Icon_awesome-instagram.png",
         "title_text": "Get Your Pup Featured On White Dog Club",
         "rich_text": "<p>We’re always excited to see you and your dogs enjoying White Dog Club products! Leave us a review, story or comment and tag us @whitedog_usa to get featured.<\/p>"
       }
