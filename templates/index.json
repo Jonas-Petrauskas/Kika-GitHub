@@ -183,6 +183,45 @@
         "richtext4": "<p>to sales & new product launches<\/p>"
       }
     },
+    "164304617086e46bb9": {
+      "type": "best-sellers-section",
+      "blocks": {
+        "f51df428-a84f-4f73-86c8-05a4cbf1e98f": {
+          "type": "section",
+          "settings": {
+            "block_product": "tauro-pro-line-deep-cleaning-shampoo-gold"
+          }
+        },
+        "7b4069dd-bb2c-4d04-8f4a-90687f144ac0": {
+          "type": "section",
+          "settings": {
+            "block_product": "tauro-pro-line-deep-cleaning-shampoo-gold"
+          }
+        },
+        "a055a0c4-b81b-4072-a978-17d928a1b50e": {
+          "type": "section",
+          "settings": {
+            "block_product": "tauro-pro-line-deep-cleaning-shampoo-gold"
+          }
+        },
+        "2af36417-6bd5-45e0-a8a8-cf5fb6cb33ac": {
+          "type": "section",
+          "settings": {
+            "block_product": "tauro-pro-line-deep-cleaning-shampoo-gold"
+          }
+        }
+      },
+      "block_order": [
+        "f51df428-a84f-4f73-86c8-05a4cbf1e98f",
+        "7b4069dd-bb2c-4d04-8f4a-90687f144ac0",
+        "a055a0c4-b81b-4072-a978-17d928a1b50e",
+        "2af36417-6bd5-45e0-a8a8-cf5fb6cb33ac"
+      ],
+      "settings": {
+        "title_text": "Our Best Sellers",
+        "button_text": "Shop Now"
+      }
+    },
     "16425961902c7cf764": {
       "type": "instagram-section",
       "blocks": {
@@ -224,45 +263,6 @@
         "title_text": "Get Your Pup Featured On White Dog Club",
         "rich_text": "<p>We’re always excited to see you and your dogs enjoying White Dog Club products! Leave us a review, story or comment and tag us @whitedog_usa to get featured.<\/p>"
       }
-    },
-    "164304617086e46bb9": {
-      "type": "best-sellers-section",
-      "blocks": {
-        "f51df428-a84f-4f73-86c8-05a4cbf1e98f": {
-          "type": "section",
-          "settings": {
-            "block_product": "tauro-pro-line-deep-cleaning-shampoo-gold"
-          }
-        },
-        "7b4069dd-bb2c-4d04-8f4a-90687f144ac0": {
-          "type": "section",
-          "settings": {
-            "block_product": "tauro-pro-line-deep-cleaning-shampoo-gold"
-          }
-        },
-        "a055a0c4-b81b-4072-a978-17d928a1b50e": {
-          "type": "section",
-          "settings": {
-            "block_product": "tauro-pro-line-deep-cleaning-shampoo-gold"
-          }
-        },
-        "2af36417-6bd5-45e0-a8a8-cf5fb6cb33ac": {
-          "type": "section",
-          "settings": {
-            "block_product": "tauro-pro-line-deep-cleaning-shampoo-gold"
-          }
-        }
-      },
-      "block_order": [
-        "f51df428-a84f-4f73-86c8-05a4cbf1e98f",
-        "7b4069dd-bb2c-4d04-8f4a-90687f144ac0",
-        "a055a0c4-b81b-4072-a978-17d928a1b50e",
-        "2af36417-6bd5-45e0-a8a8-cf5fb6cb33ac"
-      ],
-      "settings": {
-        "title_text": "Our Best Sellers",
-        "button_text": "Shop Now"
-      }
     }
   },
   "order": [
@@ -272,7 +272,7 @@
     "16418402822dd01603",
     "164191145461d7ea8b",
     "1642078880e829a408",
-    "16425961902c7cf764",
-    "164304617086e46bb9"
+    "164304617086e46bb9",
+    "16425961902c7cf764"
   ]
 }
