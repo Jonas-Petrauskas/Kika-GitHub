@@ -18,7 +18,7 @@
     margin-left: -1.2rem;
   }
 
-  @media screen and (min-width: 990px) {
+  @media screen and (min-width: 2000px) {
     header-drawer {
       display: none;
     }
@@ -249,6 +249,7 @@
       </header-drawer>
     {%- endif -%}
 
+    {% comment %}
     {%- if section.settings.logo_position == 'top-center' or section.settings.menu == blank -%}
       <details-modal class="header__search">
         <details>
@@ -323,6 +324,7 @@
         </details>
       </details-modal>
     {%- endif -%}
+    {% endcomment %}
 
     {%- if request.page_type == 'index' -%}
       <h1 class="header__heading">
@@ -346,6 +348,7 @@
       </h1>
     {%- endif -%}
 
+    {% comment %}
     {%- if section.settings.menu != blank -%}
       <nav class="header__inline-menu">
         <ul class="list-menu list-menu--inline" role="list">
@@ -398,7 +401,10 @@
       </nav>
     {%- endif -%}
 
+    {% endcomment %}
+
     <div class="header__icons">
+      {% comment %}
       <details-modal class="header__search">
         <details>
           <summary class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
@@ -471,10 +477,12 @@
           </div>
         </details>
       </details-modal>
+      {% endcomment  %}
 
       {%- if shop.customer_accounts_enabled -%}
-        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
-          {% render 'icon-account' %}
+        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="custom_account header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
+          Log In
+          <!-- {% render 'icon-account' %} -->
           <span class="visually-hidden">
             {%- liquid
               if customer

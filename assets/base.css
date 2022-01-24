@@ -1846,7 +1846,7 @@ input[type='checkbox'] {
   padding-bottom: 1rem;
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 2000px) {
   .header {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -2153,7 +2153,7 @@ details[open] > .header__icon--menu .icon-hamburger {
   margin-left: 0;
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 2000px) {
   .header__inline-menu {
     display: block;
   }
