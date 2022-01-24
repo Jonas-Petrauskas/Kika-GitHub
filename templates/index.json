@@ -224,6 +224,13 @@
         "title_text": "Get Your Pup Featured On White Dog Club",
         "rich_text": "<p>We’re always excited to see you and your dogs enjoying White Dog Club products! Leave us a review, story or comment and tag us @whitedog_usa to get featured.<\/p>"
       }
+    },
+    "164304617086e46bb9": {
+      "type": "best-sellers-section",
+      "settings": {
+        "title_text": "Our Best Sellers",
+        "button_text": "Shop Now"
+      }
     }
   },
   "order": [
@@ -233,6 +240,7 @@
     "16418402822dd01603",
     "164191145461d7ea8b",
     "1642078880e829a408",
-    "16425961902c7cf764"
+    "16425961902c7cf764",
+    "164304617086e46bb9"
   ]
 }
