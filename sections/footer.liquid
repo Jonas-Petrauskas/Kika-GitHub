@@ -36,7 +36,7 @@
               <!-- Renders block with Email Newsletter  -->
               {%- case block.type -%}
               {%- when 'richtext' -%}
-              <div>
+              <div class="footer-heading__text">
                 {{ block.settings.newsletter }}
               </div>
               <!-- Newsletter -->
@@ -107,6 +107,7 @@
                 {%- when 'image' -%}
                   <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
                     {%- if block.settings.image != blank -%}
+                    <!-- This part commented out, because when active it doesn not render the image -->
                       <!-- {%- assign image_size = block.settings.image_width | append: 'x' -%} -->
                       <img
                       {% comment %}
@@ -118,21 +119,95 @@
                         width="{{ block.settings.image.width }}"
                         height="{{ block.settings.image.height }}"
                         style="max-width: min(100%, 50%);"
+                        class="footer_image"
                       >
                       <style>
-                        .testas  p {
-                         color: red;
+
+                        .field__input {
+                          box-shadow: none;
+                          border-bottom: 1px solid white;
+                        } 
+
+                        .field__input:focus {
+                          box-shadow: none;
                         }
+
+                        .field__input:hover {
+                          box-shadow: none;
+                        }
+
+
+                        .custom_social_item {
+                          color: white;
+                        }
+                        
+                        .social-link-container {
+                          padding-top: 1rem;
+                        }
+                        
+                        .social_link {
+                          color: white !important;
+                          margin-top: 3rem;
+                        }
+                        
+                        .social_text {
+                          color: white !important;
+                          font-weight: bold;
+                          margin: 0 0 1rem 0;
+                        }
+                        
+                        .footer-block__heading {
+                          font-weight: bold;
+                          color: white;
+                        }
+
+                        .footer-block__details-content .list-menu__item--active {
+                          color: white;
+                          text-decoration: none;
+                        }
+
+                        .footer-block__details-content {
+                          color: white;
+                        }
+
+                        .footer-heading__text {
+                          color: white;
+                        }
+                        
+                        @media screen and (max-width: 989px) {
+                           .footer-block__details-content {
+                             margin-bottom:  0;
+                          }
+
+                            .social_text {
+                              padding-top: 0 !important;
+                              padding-bottom: 0 !important;
+                          }
+
+                            .social_link {
+                              padding-bottom: 0 !important;
+                          }
+                        }
+
+                        @media screen and (max-width: 749px) {
+                          .footer_image {
+                            width: 40%;
+                          }                         
+                        }
+                  
+
                       </style>
 
 
-                      <div class="testas">
+                      <div class="footer-block__details-content list-unstyled">
                         {% for link in section.settings.social_link.links %}
-                        <li>
-                          <a href="{{ link.url }}">{{ link.title }}</a>
+                        <li class="social-link-container">
+                          <a href="{{ link.url }}" class="social_link link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}" >{{ link.title }}</a>
                         </li>
                         {% endfor %}
-                        {{ section.settings.social_text }}
+                        <p class="social_text link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
+                          {{ section.settings.social_text }}
+                        </p>
                       </div>
 
                       
@@ -148,7 +223,7 @@
                         {%- endif -%}
                         {%- if settings.social_facebook_link != blank -%}
                           <li class="list-social__item">
-                            <a href="{{ settings.social_facebook_link }}" class="link list-social__link" >
+                            <a href="{{ settings.social_facebook_link }}" class="link list-social__link custom_social_item" >
                               {%- render 'icon-facebook' -%}
                               <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
                             </a>
@@ -164,7 +239,7 @@
                         {%- endif -%}
                         {%- if settings.social_instagram_link != blank -%}
                           <li class="list-social__item">
-                            <a href="{{ settings.social_instagram_link }}" class="link list-social__link" >
+                            <a href="{{ settings.social_instagram_link }}" class="link list-social__link custom_social_item" >
                               {%- render 'icon-instagram' -%}
                               <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
                             </a>
@@ -501,7 +576,7 @@
 			"label": "t:sections.footer.settings.newsletter_enable.label"
 		},
 		{
-			"type": "richtext",
+			"type": "text",
 			"id": "social_text",
 			"label": "Text Above Social Icons"
 		},
