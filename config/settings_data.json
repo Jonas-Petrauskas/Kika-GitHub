@@ -40,14 +40,23 @@
           "footer-1": {
             "type": "text",
             "settings": {
-              "heading": "Heading",
-              "subtext": "<p>Share store details, promotions, or brand content with your customers.<\/p>"
+              "heading": "OUR PROMISE",
+              "subtext": "<p>Hassle-free Returns<\/p><p>100% Premium Quality<\/p><p>24\/7 Customer Service<\/p><p>Secure Payments<\/p>"
+            }
+          },
+          "2422c344-807d-421d-bff7-9c59404a7855": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Group_197_627d57ec-2a3a-4fc3-a95f-02e898314a0d.png",
+              "image_width": 100,
+              "alignment": "center"
             }
           }
         },
         "block_order": [
           "footer-0",
-          "footer-1"
+          "footer-1",
+          "2422c344-807d-421d-bff7-9c59404a7855"
         ],
         "settings": {
           "color_scheme": "background-1",
