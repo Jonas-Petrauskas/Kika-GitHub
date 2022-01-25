@@ -78,7 +78,7 @@
         "settings": {
           "footer_color": "#93c9d1",
           "newsletter_enable": true,
-          "social_text": "<p><strong>hello@whitedogclub.com<\/strong><\/p>",
+          "social_text": "hello@whitedogclub.com",
           "social_link": "get-in-touch",
           "newsletter_heading": "",
           "show_social": true,
