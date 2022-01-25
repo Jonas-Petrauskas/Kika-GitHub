@@ -39,6 +39,14 @@
       "footer": {
         "type": "footer",
         "blocks": {
+          "2422c344-807d-421d-bff7-9c59404a7855": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Group_197_627d57ec-2a3a-4fc3-a95f-02e898314a0d.png",
+              "image_width": 100,
+              "alignment": ""
+            }
+          },
           "footer-0": {
             "type": "link_list",
             "settings": {
@@ -52,24 +60,18 @@
               "heading": "OUR PROMISE",
               "subtext": "<p>Hassle-free Returns<\/p><p>100% Premium Quality<\/p><p>24\/7 Customer Service<\/p><p>Secure Payments<\/p>"
             }
-          },
-          "2422c344-807d-421d-bff7-9c59404a7855": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Group_197_627d57ec-2a3a-4fc3-a95f-02e898314a0d.png",
-              "image_width": 100,
-              "alignment": ""
-            }
           }
         },
         "block_order": [
+          "2422c344-807d-421d-bff7-9c59404a7855",
           "footer-0",
-          "footer-1",
-          "2422c344-807d-421d-bff7-9c59404a7855"
+          "footer-1"
         ],
         "settings": {
-          "color_scheme": "accent-2",
+          "footer_color": "#93c9d1",
           "newsletter_enable": true,
+          "social_text": "",
+          "social_link": "",
           "newsletter_heading": "JOIN THE CLUB",
           "show_social": true,
           "enable_country_selector": true,
