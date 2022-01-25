@@ -70,8 +70,8 @@
         "settings": {
           "footer_color": "#93c9d1",
           "newsletter_enable": true,
-          "social_text": "",
-          "social_link": "",
+          "social_text": "<p><strong>hello@whitedogclub.com<\/strong><\/p>",
+          "social_link": "get-in-touch",
           "newsletter_heading": "JOIN THE CLUB",
           "show_social": true,
           "enable_country_selector": true,
