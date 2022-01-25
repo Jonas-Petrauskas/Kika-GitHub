@@ -60,19 +60,27 @@
               "heading": "OUR PROMISE",
               "subtext": "<p>Hassle-free Returns<\/p><p>100% Premium Quality<\/p><p>24\/7 Customer Service<\/p><p>Secure Payments<\/p>"
             }
+          },
+          "ffdea77f-ada6-4d5e-95df-43d424480ce2": {
+            "type": "richtext",
+            "settings": {
+              "heading": "Heading",
+              "newsletter": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>"
+            }
           }
         },
         "block_order": [
           "2422c344-807d-421d-bff7-9c59404a7855",
           "footer-0",
-          "footer-1"
+          "footer-1",
+          "ffdea77f-ada6-4d5e-95df-43d424480ce2"
         ],
         "settings": {
           "footer_color": "#93c9d1",
           "newsletter_enable": true,
           "social_text": "<p><strong>hello@whitedogclub.com<\/strong><\/p>",
           "social_link": "get-in-touch",
-          "newsletter_heading": "JOIN THE CLUB",
+          "newsletter_heading": "",
           "show_social": true,
           "enable_country_selector": true,
           "enable_language_selector": true,
