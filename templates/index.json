@@ -15,6 +15,7 @@
         "09ca11f8-7faa-453a-ae69-234947a9795f": {
           "type": "section",
           "settings": {
+            "link": "shopify:\/\/collections\/food",
             "image": "shopify:\/\/shop_images\/Group_177.png",
             "button_text": "SHOP FOOD",
             "button_color": "#093541"
@@ -23,6 +24,7 @@
         "2de44d10-56e2-4b39-b3d3-ca99d866f5d7": {
           "type": "section",
           "settings": {
+            "link": "",
             "image": "shopify:\/\/shop_images\/Group_178.png",
             "button_text": "SHOP COSMETICS",
             "button_color": "#c878a1"
@@ -31,6 +33,7 @@
         "f56ca037-92c2-4a6e-a676-3f434dd413fa": {
           "type": "section",
           "settings": {
+            "link": "",
             "image": "shopify:\/\/shop_images\/Group_179.png",
             "button_text": "SHOP CARE",
             "button_color": "#12501d"
