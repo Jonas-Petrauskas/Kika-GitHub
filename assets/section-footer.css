@@ -93,8 +93,10 @@
 
 .footer__column--info {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row-reverse;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  justify-content: space-between;
   align-items: center;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -445,6 +447,7 @@ noscript .localization-selector.link {
   }
 
   .footer-block__details-content .list-menu__item--active:hover {
+    color: white;
     text-decoration-thickness: 0.2rem;
   }
 }
