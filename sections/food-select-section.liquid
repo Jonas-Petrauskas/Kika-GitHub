@@ -1,7 +1,110 @@
+<style>
+
+  .best-sellers-card__wrapper {
+    padding: 1rem 1rem 2rem 1rem;
+  }
+
+  .block-wrapper__section {
+    display: flex;
+  }
+
+  .best-sellers-title__container h3 {
+    text-align: center;
+    font-size: 4rem;
+    color: #035966;
+  }
+
+  .product-image img {
+    margin: auto;
+    width: 75%;
+  }
+
+  .best-sellers-card__container {
+    padding-bottom: 2rem;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  }
+
+  .product-title {
+    color: #035966;
+    font-weight: bold;
+    line-height: 2rem;
+  }
+
+  .product-price {
+    padding: 1rem 0;
+    font-weight: bold;
+    border-bottom: 1px solid #B2B2B2;
+  }
+
+  .product-image, .product-title, .product-price {
+    margin: auto;
+    width: 90%;
+  }
+
+  .product-features {
+    padding-left: 32px;
+    padding-right: 10px;
+  }
+
+  .best-sellers-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    height: 3.5rem;
+    text-decoration: none;
+    color: white;
+    background: #035966;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-left: 15px;
+  }
+</style>
+
+<div class="food-section__wrapper">
+
+
+
+  <div class="block-wrapper__section page-width">
+
+    {% for product in collections[section.settings.collection].products %}
+    <div class="best-sellers-card__wrapper">
+      <div class="best-sellers-card__container">
+        <div class="product-image"><img loading="lazy" src="{{ product | image_url: image_size }}" alt=""></div>
+        <div class="product-title">{{ product.title }}</div>
+        <div class="product-price">{{ product.price | money }}</div>
+  
+          <ul class="product-features">
+            <li>{{ section_product.metafields.best_sellers.feature_one }}</li>
+            <li>{{ section_product.metafields.best_sellers.feature_two }}</li>
+            <li>{{ section_product.metafields.best_sellers.feature_three }}</li>
+            <li>{{ section_product.metafields.best_sellers.feature_four }}</li>
+            <li>{{ section_product.metafields.best_sellers.feature_five }}</li>
+            <li>{{ section_product.metafields.best_sellers.feature_six }}</li>
+          </ul>
+
+          <a class="best-sellers-button" href="/">{{ section.settings.button_text }}</a>
+
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+
+
+</div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Food Select",
+    "settings": [{
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    }],
+    "presets": [{
+      "name": "Food Select Section"
+    }]
   }
 {% endschema %}
 
