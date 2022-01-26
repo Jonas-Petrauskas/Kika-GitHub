@@ -1,11 +1,13 @@
 <style>
 
-  .best-sellers-card__wrapper {
+  .food-section-card__wrapper {
+    max-width: 25%;
     padding: 1rem 1rem 2rem 1rem;
   }
 
-  .block-wrapper__section {
+  .food-section__block {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .best-sellers-title__container h3 {
@@ -14,34 +16,38 @@
     color: #035966;
   }
 
-  .product-image img {
+  .item-image {
+    display: flex;
+  }
+
+  .item-image img {
     margin: auto;
     width: 75%;
   }
 
-  .best-sellers-card__container {
+  .food-section-card__container {
     padding-bottom: 2rem;
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
   }
 
-  .product-title {
+  .item-title {
     color: #035966;
     font-weight: bold;
     line-height: 2rem;
   }
 
-  .product-price {
+  .item-price {
     padding: 1rem 0;
     font-weight: bold;
     border-bottom: 1px solid #B2B2B2;
   }
 
-  .product-image, .product-title, .product-price {
+  .item-image, .item-title, .item-price {
     margin: auto;
     width: 90%;
   }
 
-  .product-features {
+  .item-features {
     padding-left: 32px;
     padding-right: 10px;
   }
@@ -61,20 +67,20 @@
   }
 </style>
 
-<div class="food-section__wrapper">
 
+{% assign collection = collections[section.settings.collection] %}
 
+<div class="food-section__wrapper {{ collection.handle }}" >
 
-  <div class="block-wrapper__section page-width">
-
+  <div class="food-section__block page-width">
     {% for product in collections[section.settings.collection].products %}
-    <div class="best-sellers-card__wrapper">
-      <div class="best-sellers-card__container">
-        <div class="product-image"><img loading="lazy" src="{{ product | image_url: image_size }}" alt=""></div>
-        <div class="product-title">{{ product.title }}</div>
-        <div class="product-price">{{ product.price | money }}</div>
+    <div class="food-section-card__wrapper">
+      <div class="food-section-card__container">
+        <div class="item-image"><img loading="lazy" src="{{ product | image_url: image_size }}" alt=""></div>
+        <div class="item-title">{{ product.title }}</div>
+        <div class="item-price">{{ product.price | money }}</div>
   
-          <ul class="product-features">
+          <ul class="item-features">
             <li>{{ section_product.metafields.best_sellers.feature_one }}</li>
             <li>{{ section_product.metafields.best_sellers.feature_two }}</li>
             <li>{{ section_product.metafields.best_sellers.feature_three }}</li>
@@ -90,8 +96,6 @@
     {% endfor %}
   </div>
 
-
-
 </div>
 
 {% schema %}
@@ -101,7 +105,8 @@
       "type": "collection",
       "id": "collection",
       "label": "Collection"
-    }],
+    }
+    ],
     "presets": [{
       "name": "Food Select Section"
     }]
