@@ -92,7 +92,7 @@
       <div class="block-image__container">
         <img loading="lazy" src="{{ block.settings.image | image_url: image_size }}"
           alt="{{ block.settings.image.alt }}">
-        <a class="block-button__container" style="background-color: {{ block.settings.button_color }};" href="/">{{
+        <a class="block-button__container" style="background-color: {{ block.settings.button_color }};" href="{{ block.settings.link }}">{{
           block.settings.button_text }}</a>
       </div>
     </div>
@@ -113,9 +113,14 @@
 ],
 "blocks": [
 {
-"name": "Section Block",
+  "name": "Section Block",
 "type": "section",
 "settings": [
+{
+  "type": "url",
+  "id": "link",
+  "label": "Url"
+},
 {
 "type": "image_picker",
 "id": "image",
