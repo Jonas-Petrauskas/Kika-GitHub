@@ -29,11 +29,18 @@
       "settings": {
         "collection": "food"
       }
+    },
+    "1643212213d644c769": {
+      "type": "food-select-section",
+      "settings": {
+        "collection": "1st-stage-wc"
+      }
     }
   },
   "order": [
     "banner",
     "product-grid",
-    "1643203432fe1c7fbe"
+    "1643203432fe1c7fbe",
+    "1643212213d644c769"
   ]
 }
