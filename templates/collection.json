@@ -35,12 +35,19 @@
       "settings": {
         "collection": "1st-stage-wc"
       }
+    },
+    "16432122450774527c": {
+      "type": "food-select-section",
+      "settings": {
+        "collection": "1st-hc"
+      }
     }
   },
   "order": [
     "banner",
     "product-grid",
     "1643203432fe1c7fbe",
-    "1643212213d644c769"
+    "1643212213d644c769",
+    "16432122450774527c"
   ]
 }
