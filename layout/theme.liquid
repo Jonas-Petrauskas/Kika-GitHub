@@ -245,7 +245,21 @@
       })
 
       $(".button_one").click(function() {
-        $(".1st-stage-wc").toggle();
+        $(".elixirs").show();
+        $(".1st-stage-wc").hide();
+        $(".1st-hc").hide()
+      })
+
+      $(".button_two").click(function() {
+        $(".elixirs").hide();
+        $(".1st-stage-wc").show()
+        $(".1st-hc").hide();
+      })
+
+      $(".button_three").click(function() {
+        $(".elixirs").hide();
+        $(".1st-stage-wc").hide()
+        $(".1st-hc").show();
       })
 
 

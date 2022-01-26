@@ -1,7 +1,30 @@
+
+<style>
+  .buttons-container {
+    padding: 4rem 0;
+    text-align: center;
+  }
+
+  .buttons-container button {
+    margin: 1rem;
+    padding: 1rem;
+  }
+</style>
+
+<div class="buttons-container">
+
+  <button class="button_one">One</button>
+  <button class="button_two">Two</button>
+  <button class="button_three">Three</button>
+</div>
+
 {% schema %}
   {
     "name": "Section name",
-    "settings": []
+    "settings": [],
+    "presets": [{
+      "name": "Filter Buttons"
+    }]
   }
 {% endschema %}
 
