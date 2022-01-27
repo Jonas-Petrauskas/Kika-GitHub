@@ -24,6 +24,11 @@
         "collapse_on_larger_devices": false
       }
     },
+    "16432732402ea54d80": {
+      "type": "item-filter-section",
+      "settings": {
+      }
+    },
     "1643203432fe1c7fbe": {
       "type": "food-select-section",
       "settings": {
@@ -67,6 +72,7 @@
   "order": [
     "banner",
     "product-grid",
+    "16432732402ea54d80",
     "1643203432fe1c7fbe",
     "1643212213d644c769",
     "16432122450774527c"
