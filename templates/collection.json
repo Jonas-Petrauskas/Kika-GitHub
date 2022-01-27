@@ -27,6 +27,9 @@
     "16432732402ea54d80": {
       "type": "item-filter-section",
       "settings": {
+        "text_left": "<p>PUPPY<\/p><p>(2-4 MONTHS)<\/p>",
+        "text_middle": "<p>JUNIOR<\/p><p>(4-12 MONTHS)<\/p>",
+        "text_right": "<p>ADULT<\/p><p>(OVER 1 YEAR)<\/p>"
       }
     },
     "1643203432fe1c7fbe": {
