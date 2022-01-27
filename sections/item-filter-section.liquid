@@ -8,24 +8,8 @@
     width: 350px;
     height: 150px;
     margin: auto;
-    /* height: 500px; */
-    /* border: 2px solid red; */
     padding: 4rem 0;
     text-align: center;
-  }
-
-  .buttons-container button {
-    /* margin: 1rem; */
-    /* padding: 1rem; */
-  }
-
-  
-  #button_one, #button_two, #button_three {
-    position: relative;
-    background-color: transparent;
-    border: none;
-    margin: 0;
-    padding: 0;
   }
 
   #button_one {
@@ -46,10 +30,9 @@
     height: 50px;
   }
 
-  .button_item {
+  .image_puppy {
     position: relative;
-    z-index: 99;
-    /* left: 0px; */
+    z-index: 2;
     left: -150px;
     width: 65px;
     height: 65px;
@@ -57,25 +40,12 @@
 
   .image_adult {
     position: absolute;
-    z-index: 99;
+    z-index: 2;
     left: 292px;
     width: 65px;
     height: 65px;
     display: none;
   }
-
-  /* .button_box {
-    border: 2px solid red;
-    width: 450px;
-    height: 200px;
-  } */
-  /* 
-  .button_item {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 0%;
-  } */
 
   .border {
     display: block !important;
@@ -89,17 +59,12 @@
 
 <div class="buttons-container">
   <div class="border"></div>
-  <img class="button_item" src="https://cdn.shopify.com/s/files/1/0597/1551/8645/files/Group_202.png?v=1643277351" alt="">
+  <img class="image_puppy" src="https://cdn.shopify.com/s/files/1/0597/1551/8645/files/Group_202.png?v=1643277351" alt="">
   <img class="image_adult" src="https://cdn.shopify.com/s/files/1/0597/1551/8645/files/Group_308.png?v=1643295106" alt="">
   <img id="button_one" class="button_image" src="https://cdn.shopify.com/s/files/1/0597/1551/8645/files/Rectangle_344.png?v=1643279421" alt="">
   <img id="button_two"class="button_image" src="https://cdn.shopify.com/s/files/1/0597/1551/8645/files/Rectangle_344.png?v=1643279421" alt="">
   <img id="button_three" class="button_image" src="https://cdn.shopify.com/s/files/1/0597/1551/8645/files/Rectangle_344.png?v=1643279421" alt="">
 </div>
-
-
-<!-- <div class="button_box">
-  <img class="button_item" src="https://cdn.shopify.com/s/files/1/0597/1551/8645/files/Group_202.png?v=1643277351" alt="">
-</div> -->
 
 {% schema %}
   {
