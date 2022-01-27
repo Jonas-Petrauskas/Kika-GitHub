@@ -27,19 +27,40 @@
     "1643203432fe1c7fbe": {
       "type": "food-select-section",
       "settings": {
-        "collection": "elixirs"
+        "collection": "food-junior",
+        "button_text": "",
+        "feature_1": "",
+        "feature_2": "",
+        "feature_3": "",
+        "feature_4": "",
+        "feature_5": "",
+        "feature_6": ""
       }
     },
     "1643212213d644c769": {
       "type": "food-select-section",
       "settings": {
-        "collection": "1st-stage-wc"
+        "collection": "food-puppy",
+        "button_text": "",
+        "feature_1": "",
+        "feature_2": "",
+        "feature_3": "",
+        "feature_4": "",
+        "feature_5": "",
+        "feature_6": ""
       }
     },
     "16432122450774527c": {
       "type": "food-select-section",
       "settings": {
-        "collection": "1st-hc"
+        "collection": "food-adult",
+        "button_text": "",
+        "feature_1": "",
+        "feature_2": "",
+        "feature_3": "",
+        "feature_4": "",
+        "feature_5": "",
+        "feature_6": ""
       }
     }
   },
