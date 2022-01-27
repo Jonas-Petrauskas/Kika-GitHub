@@ -244,25 +244,48 @@
         ]
       })
 
-      $(".button_one").click(function() {
-        $(".elixirs").show();
-        $(".1st-stage-wc").hide();
-        $(".1st-hc").hide()
+      $("#button_one").click(function() {
+        $(".food-puppy").show();
+        $(".food-junior").hide();
+        $(".food-adult").hide()
       })
 
-      $(".button_two").click(function() {
-        $(".elixirs").hide();
-        $(".1st-stage-wc").show()
-        $(".1st-hc").hide();
+      $("#button_two").click(function() {
+        $(".food-puppy").hide();
+        $(".food-junior").show()
+        $(".food-adult").hide();
       })
 
-      $(".button_three").click(function() {
-        $(".elixirs").hide();
-        $(".1st-stage-wc").hide()
-        $(".1st-hc").show();
+      $("#button_three").click(function() {
+        $(".food-puppy").hide();
+        $(".food-junior").hide()
+        $(".food-adult").show();
       })
 
+      $("#button_one").click(function() {
+        $(".button_item").css("left", "-150px")
+        $(".button_item").css("transition", "1s")
+        $(".button_item").show();
+        $('.image_adult').hide();
+      })
+      
+      $("#button_two").click(function() {
+        $(".button_item").css("left", "0px")
+        $(".button_item").css("transition", "1s")
+        $(".button_item").show();
 
+        $(".image_adult").hide();
+      })
+
+      $("#button_three").click(function() {
+        $(".button_item").css("left", "150px")
+        $(".button_item").css("transition", "1s")
+        
+          let buttonTimeAppear = setTimeout(function () {
+            $(".image_adult").show();
+          }, 1000)
+          
+      })
 
        </script>
   </body>

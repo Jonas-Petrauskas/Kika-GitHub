@@ -66,6 +66,10 @@
     font-weight: bold;
     margin-left: 15px;
   }
+
+  .food-junior, .food-adult {
+    display: none;
+  }
   
 </style>
 
@@ -80,7 +84,7 @@
       <div class="food-section-card__container">
         <div class="item-image"><img loading="lazy" src="{{ product | image_url: image_size }}" alt=""></div>
         <div class="item-title">{{ product.title }}</div>
-        <div class="item-price">{{ product.price | money }}</div>
+        <div class="item-price">from {{ product.price | money }}</div>
   
           <ul class="item-features">
             <li>{{ section.settings.feature_1 }}</li>
@@ -91,7 +95,7 @@
             <li>{{ section.settings.feature_6 }}</li>
           </ul>
 
-          <a class="best-sellers-button" href="/">{{ section.settings.button_text }}</a>
+          <a class="best-sellers-button" href="{{ product.url }}">{{ section.settings.button_text }}</a>
 
       </div>
     </div>
