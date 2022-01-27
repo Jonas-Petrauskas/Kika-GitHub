@@ -1,14 +1,18 @@
 
 <style>
+
+  .filter-section__wrapper {
+    padding: 4rem 0;
+  }
+
   .buttons-container {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     width: 350px;
-    height: 150px;
+    height: 110px;
     margin: auto;
-    padding: 4rem 0;
     text-align: center;
   }
 
@@ -52,24 +56,76 @@
     width: 300px;
     border-bottom: 7px solid #84CAD4;
     position: absolute; 
-    top: 72px;
+    top: 52px;
+  }
+
+  .select_container {
+    width: 350px;
+    margin: auto;
+  }
+  .select_image {
+    width: 100%;
+  }
+
+  .bottom-text__weapper {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .bottom-text__weapper p {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.7rem;
   }
 
 </style>
 
-<div class="buttons-container">
-  <div class="border"></div>
-  <img class="image_puppy" src="https://cdn.shopify.com/s/files/1/0597/1551/8645/files/Group_202.png?v=1643277351" alt="">
-  <img class="image_adult" src="https://cdn.shopify.com/s/files/1/0597/1551/8645/files/Group_308.png?v=1643295106" alt="">
-  <img id="button_one" class="button_image" src="https://cdn.shopify.com/s/files/1/0597/1551/8645/files/Rectangle_344.png?v=1643279421" alt="">
-  <img id="button_two"class="button_image" src="https://cdn.shopify.com/s/files/1/0597/1551/8645/files/Rectangle_344.png?v=1643279421" alt="">
-  <img id="button_three" class="button_image" src="https://cdn.shopify.com/s/files/1/0597/1551/8645/files/Rectangle_344.png?v=1643279421" alt="">
+<div class="filter-section__wrapper">
+
+  <div class="select_container">
+    <img class="select_image" loading="lazy" src="https://cdn.shopify.com/s/files/1/0597/1551/8645/files/Group_369.png?v=1643298677" alt="">
+  </div>
+  
+  <div class="buttons-container">
+    <div class="border"></div>
+    <img class="image_puppy" loading="lazy" src="https://cdn.shopify.com/s/files/1/0597/1551/8645/files/Group_202.png?v=1643277351" alt="">
+    <img class="image_adult" loading="lazy" src="https://cdn.shopify.com/s/files/1/0597/1551/8645/files/Group_308.png?v=1643295106" alt="">
+    <img id="button_one" class="button_image" loading="lazy" src="https://cdn.shopify.com/s/files/1/0597/1551/8645/files/Rectangle_344.png?v=1643279421" alt="">
+    <img id="button_two"class="button_image" loading="lazy" src="https://cdn.shopify.com/s/files/1/0597/1551/8645/files/Rectangle_344.png?v=1643279421" alt="">
+    <img id="button_three" class="button_image" loading="lazy" src="https://cdn.shopify.com/s/files/1/0597/1551/8645/files/Rectangle_344.png?v=1643279421" alt="">
+  </div>
+  
+  <div class="bottom-text__weapper">
+    <div class="text-left">{{ section.settings.text_left }}</div>
+    <div class="text-middle">{{ section.settings.text_middle }}</div>
+    <div class="text-right">{{ section.settings.text_right }}</div>
+  
+  </div>
+
 </div>
 
 {% schema %}
   {
     "name": "Section name",
-    "settings": [],
+    "settings": [{
+      "type": "richtext",
+      "id": "text_left",
+      "label": "Text Left"
+    },
+    {
+      "type": "richtext",
+      "id": "text_middle",
+      "label": "Text Left"
+    },
+    {
+      "type": "richtext",
+      "id": "text_right",
+      "label": "Text Right"
+    }
+    ],
     "presets": [{
       "name": "Filter Buttons"
     }]
